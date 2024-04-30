@@ -2,7 +2,7 @@ export class Local {
     constructor(model_name) {
         this.model_name = model_name;
         this.embedding_model = 'nomic-embed-text';
-        this.url = 'http://localhost:11434';
+        this.url = url || 'http://localhost:11434';
         this.chat_endpoint = '/api/chat';
         this.embedding_endpoint = '/api/embeddings';
     }
